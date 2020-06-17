@@ -12,7 +12,7 @@ namespace OracleTest.jcz.dao
    public  class OracleDB
     {
 
-         //123123
+         //123123123
         public static SqlSugarClient GetInstance()
         {
             return new SqlSugarClient(new ConnectionConfig()
