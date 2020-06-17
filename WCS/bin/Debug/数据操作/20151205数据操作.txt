@@ -1,0 +1,12 @@
+2015/12/5 13:19:13: GetOPCItem()获取OPC项信息出错
+2015/12/5 13:19:14: GetEquipmentInfo()获取设备信息出错
+2015/12/5 13:19:14: GetEquipmentInfo()获取设备信息出错
+2015/12/5 13:19:15: GetTaskInfo获取任务列表失败
+2015/12/5 13:21:09: GetOPCItem()获取OPC项信息出错
+2015/12/5 13:21:09: GetEquipmentInfo()获取设备信息出错
+2015/12/5 13:21:09: GetEquipmentInfo()获取设备信息出错
+2015/12/5 13:21:10: GetTaskInfo获取任务列表失败
+2015/12/5 14:53:11: GetOPCItem()获取OPC项信息出错
+2015/12/5 14:53:39: GetEquipmentInfo()获取设备信息出错
+2015/12/5 14:53:39: GetEquipmentInfo()获取设备信息出错
+2015/12/5 14:53:40: GetTaskInfo获取任务列表失败

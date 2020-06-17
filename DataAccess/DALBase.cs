@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using LOG;
+
+namespace DataAccess
+{
+    public class DALBase : OracleHelper
+    {
+        public const string SQL_SELECT_OPCITEM = "SELECT * FROM WCS_OPCITEM WHERE WAREHOUSEID = :WareHouseID AND STATUS = '1' ORDER BY ITEMID";
+
+        public const string SQL_SELECT_WCSEQUIPMENT = "SELECT * FROM WCS_EQUIPMENTINFO WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTSTATUS='1' AND TO_NUMBER(EQUIPMENTAISLE)<9 ORDER BY EQUIPMENTNAME,EQUIPMENTPORT";
+        
+        public const string SQL_SELECT_WCSEQUIPMENTB = "SELECT * FROM WCS_EQUIPMENTINFO WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTSTATUS='1' AND TO_NUMBER(EQUIPMENTAISLE)>8 ORDER BY EQUIPMENTNAME,EQUIPMENTPORT";
+
+        public const string SQL_SELECT_WCSEQUIPMENT_BYD = "SELECT * FROM WCS_EQUIPMENTINFO WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTFIELD4=:Zone AND EQUIPMENTFIELD2=:PlcNumber ORDER BY EQUIPMENTNAME,EQUIPMENTPORT";
+
+        public const string SQL_SELECT_TOSTATION = "SELECT FROMSTATION,TOSTATION FROM WCS_SUBTASKINFO WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTTYPE='SC' AND TASKSTATUS='2' AND TASKNO=:Taskno AND RUNSTATUS='1'";
+
+        public const string SQL_SELECT_STATOSTATION = "SELECT FROMSTATION,TOSTATION,CURRENTSTATION,BARCODE FROM WCS_SUBTASKINFO WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTTYPE='STA' AND TASKNO=:Taskno AND RUNSTATUS='1'";
+
+        public const string SQL_SELECT_EQUIPMENT = "SELECT FIELD1 FROM EQUIPMENT WHERE WAREHOUSEID=:WareHouseID AND EQUIPMENTNUMBER=:EquipmentNumber";
+
+        public const string SQL_SELECT_ITEMCODE = "SELECT DISTINCT ITEMCODE,USERID FROM WCS_ITEMCODE WHERE WAREHOUSEID=:WareHouseID AND TASKNO=:TaskNo";
+
+        public const string SQL_SELECT_SCMODE = "select equipmentnumber,field1,field2 from equipment where warehouseid=:WareHouseID and description like '%堆垛机%' order by equipmentnumber";
+
+        public const string SQL_SELECT_LEDTEXT = "SELECT LEDTEXT FROM WCS_TASKINFO_HISTORY WHERE WAREHOUSEID=:WareHouseID AND TASKNO=:TaskNo AND CREATETIME>SYSDATE-1";
+
+        public const string SQL_SELECT_BARCODE = "SELECT BARCODE||','||MIDSTATION||','||TOSTATION  FROM WCS_SUBTASKINFO WHERE WAREHOUSEID=:WareHouseID AND TASKNO=:TaskNo AND EQUIPMENTTYPE='STA'";
+
+        public const string SQL_SELECT_BARCODESTV = "SELECT BARCODE||','||MIDSTATION||','||TOSTATION  FROM WCS_SUBTASKINFO WHERE WAREHOUSEID=:WareHouseID AND TASKNO=:TaskNo AND EQUIPMENTTYPE='STV'";
+
+        public const string SQL_SELECT_QTY = "SELECT W.ITEMQTY||','||R.STATUSIT FROM WCS_TASKINFO  W  LEFT JOIN WCS_RFID R ON W.BARCODE=R.CASECODESR WHERE W.WAREHOUSEID=:WareHouseID AND W.TASKNO=:TaskNo";
+
+        public const string SQL_SELECT_OUTSTATION = "SELECT TOSTATION FROM WCS_SUBTASKINFO WHERE WAREHOUSEID=:WareHouseID and TASKNO=:TaskNo and EQUIPMENTTYPE='STA'";
+
+        public const string SQL_SELECT_GETRFID = "SELECT * FROM WCS_RFID WHERE WAREHOUSEID=:WareHouseID AND CASECODESR=:rfidNO";
+
+        public const string SQL_SELECT_GETCOUNTBYPRODNO = "SELECT COUNT(*) FROM TASK WHERE WAREHOUSEID=:WareHouseID AND TASKTYPECODE='Task_OutBound' AND STATECODE IN('Task_Executing','Task_WaitingExecute') AND CONTAINERID IN(SELECT CONTAINERID FROM CONTAINERDETAIL WHERE ITEMID=(SELECT ITEMID FROM ITEM WHERE CODE=:ProdNo))";
+
+        public const string PARAM_FROMSTATION = ":FromStation";
+        public const string PARAM_WAREHOUSE_ID = ":WareHouseID";
+        public const string PARAM_EQUIPMENTTYPE = ":EquipmentType";
+        public const string PARAM_EQUIPMENTNUMBER = ":EquipmentNumber";
+        public const string PARAM_CASECODESR = ":rfidNO";
+        public const string PARAM_TASKNO = ":TaskNo";
+        public const string PARAM_PRODNO = ":ProdNo";
+        public const string PARAM_ZONE = ":Zone";
+        public const string PARAM_PLCNUMBER = ":PlcNumber";
+
+        public Log loginfo = new Log("数据操作", ".\\数据操作\\");
+    }
+}

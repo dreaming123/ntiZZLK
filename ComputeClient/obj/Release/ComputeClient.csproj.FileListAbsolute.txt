@@ -1,0 +1,6 @@
+E:\xiamen\WCS_CP\ComputeClient\obj\Release\ResolveAssemblyReference.cache
+E:\xiamen\XMWCS\ComputeClient\obj\Release\ResolveAssemblyReference.cache
+D:\XMWCS\ComputeClient\obj\Release\ResolveAssemblyReference.cache
+F:\wms.wcs\XMWCS\ComputeClient\obj\Release\ResolveAssemblyReference.cache
+G:\资料\HRB\烟丝库\XMWCS\ComputeClient\obj\Release\ResolveAssemblyReference.cache
+F:\HRB\HRB_WCS_YS_20131024\ComputeClient\obj\Release\ResolveAssemblyReference.cache

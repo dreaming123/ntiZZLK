@@ -1,0 +1,5 @@
+E:\WCS\LEDControl_UDP\obj\Release\ResolveAssemblyReference.cache
+D:\XMWCS\LEDControl_UDP\obj\Release\ResolveAssemblyReference.cache
+F:\wms.wcs\XMWCS\LEDControl_UDP\obj\Release\ResolveAssemblyReference.cache
+G:\资料\HRB\烟丝库\XMWCS\LEDControl_UDP\obj\Release\ResolveAssemblyReference.cache
+F:\HRB\HRB_WCS_YS_20131024\LEDControl_UDP\obj\Release\ResolveAssemblyReference.cache

@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4177D054-D113-4F8A-9E01-642E072F9C87}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OracleTest</RootNamespace>
+    <AssemblyName>OracleTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Oracle.ManagedDataAccess.19.7.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="SqlSugar, Version=5.0.0.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SqlSugar.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntacticSugar, Version=2.4.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Demo\Demo0_SqlSugarClient.cs" />
+    <Compile Include="Demo\Demo1_Queryable.cs" />
+    <Compile Include="Demo\Demo2_Updateable.cs" />
+    <Compile Include="Demo\Demo3_Insertable.cs" />
+    <Compile Include="Demo\Demo4_Deleteable.cs" />
+    <Compile Include="Demo\Demo5_SqlQueryable.cs" />
+    <Compile Include="Demo\Demo6_Queue.cs" />
+    <Compile Include="Demo\Demo7_Ado.cs" />
+    <Compile Include="Demo\Demo8_Saveable.cs" />
+    <Compile Include="Demo\Demo9_EntityMain.cs" />
+    <Compile Include="Demo\DemoA_DbMain.cs" />
+    <Compile Include="Demo\DemoB_Aop.cs" />
+    <Compile Include="Demo\Democ_GobalFilter.cs" />
+    <Compile Include="Demo\DemoD_DbFirst.cs" />
+    <Compile Include="Demo\DemoE_CodeFirst.cs" />
+    <Compile Include="Demo\DemoF_Utilities.cs" />
+    <Compile Include="Demo\DemoG_SimpleClient.cs" />
+    <Compile Include="Demo\ITEM.cs" />
+    <Compile Include="Demo\test.cs" />
+    <Compile Include="jcz\dao\OracleDB.cs" />
+    <Compile Include="jcz\dao\TaskDao.cs" />
+    <Compile Include="jcz\entity\BATCHSPLIT.cs" />
+    <Compile Include="jcz\entity\BATCHUNION.cs" />
+    <Compile Include="jcz\entity\BILL.cs" />
+    <Compile Include="jcz\entity\BILLNUMBER.cs" />
+    <Compile Include="jcz\entity\BILLOFMATERIELDETAIL.cs" />
+    <Compile Include="jcz\entity\BILLOFMATERIELDETAILITEM.cs" />
+    <Compile Include="jcz\entity\BILLOFMATERIELHEAD.cs" />
+    <Compile Include="jcz\entity\BOMSETTING.cs" />
+    <Compile Include="jcz\entity\CALLMATERIALLOG.cs" />
+    <Compile Include="jcz\entity\CHILDITEMSETTING.cs" />
+    <Compile Include="jcz\entity\CLASSGROUP.cs" />
+    <Compile Include="jcz\entity\CONSIGNMENT.cs" />
+    <Compile Include="jcz\entity\CONTAINERDETAIL.cs" />
+    <Compile Include="jcz\entity\CONTAINERINFO.cs" />
+    <Compile Include="jcz\entity\CONTAINERINVENTORY.cs" />
+    <Compile Include="jcz\entity\CONTAINERLASTITEM.cs" />
+    <Compile Include="jcz\entity\CONTAINERTYPE.cs" />
+    <Compile Include="jcz\entity\CONTROLDATADETAIL.cs" />
+    <Compile Include="jcz\entity\CONTROLDATATITLE.cs" />
+    <Compile Include="jcz\entity\COUNTDETAIL.cs" />
+    <Compile Include="jcz\entity\COUNTHEAD.cs" />
+    <Compile Include="jcz\entity\COUNTPLANDETAIL.cs" />
+    <Compile Include="jcz\entity\COUNTPLANHEAD.cs" />
+    <Compile Include="jcz\entity\CROSSBILL.cs" />
+    <Compile Include="jcz\entity\CROSSDETAIL.cs" />
+    <Compile Include="jcz\entity\CROSSHEAD.cs" />
+    <Compile Include="jcz\entity\CYCLECOUNT.cs" />
+    <Compile Include="jcz\entity\DOCK.cs" />
+    <Compile Include="jcz\entity\DOCKORDERLINE.cs" />
+    <Compile Include="jcz\entity\DOWORKDATETIME.cs" />
+    <Compile Include="jcz\entity\EQUIPMENT.cs" />
+    <Compile Include="jcz\entity\EQUIPMENTLINE.cs" />
+    <Compile Include="jcz\entity\EVENT.cs" />
+    <Compile Include="jcz\entity\FINISHEDCONTAINERDETAIL.cs" />
+    <Compile Include="jcz\entity\FINISHEDPREINBOUND.cs" />
+    <Compile Include="jcz\entity\FINISHEDPREOUTBOUND.cs" />
+    <Compile Include="jcz\entity\FINISHEDTASK.cs" />
+    <Compile Include="jcz\entity\FLCONFIRM.cs" />
+    <Compile Include="jcz\entity\FLONMACHINE.cs" />
+    <Compile Include="jcz\entity\HANDBILLFORREPORT.cs" />
+    <Compile Include="jcz\entity\INBOUNDCHECK.cs" />
+    <Compile Include="jcz\entity\INVENTORY.cs" />
+    <Compile Include="jcz\entity\INVENTORYHISTORYDETAIL.cs" />
+    <Compile Include="jcz\entity\INVENTORYHISTORYHEAD.cs" />
+    <Compile Include="jcz\entity\ITEM.cs" />
+    <Compile Include="jcz\entity\ITEMCATALOG.cs" />
+    <Compile Include="jcz\entity\ITEMINVENTORYLOG.cs" />
+    <Compile Include="jcz\entity\ITEMPRICE.cs" />
+    <Compile Include="jcz\entity\ITEMSHIPPER_T.cs" />
+    <Compile Include="jcz\entity\ITEMUNIT.cs" />
+    <Compile Include="jcz\entity\LABEL.cs" />
+    <Compile Include="jcz\entity\LABELTEMPLATE.cs" />
+    <Compile Include="jcz\entity\LABELTEMPLATEBARCODE.cs" />
+    <Compile Include="jcz\entity\LABELTEMPLATETEXT.cs" />
+    <Compile Include="jcz\entity\LANEWAYSELECT.cs" />
+    <Compile Include="jcz\entity\LANEWAYSELECTHISTORY.cs" />
+    <Compile Include="jcz\entity\LANEWAYSELECTPLAN.cs" />
+    <Compile Include="jcz\entity\LOCATION.cs" />
+    <Compile Include="jcz\entity\LOCATIONRULES.cs" />
+    <Compile Include="jcz\entity\LOCATIONZONE.cs" />
+    <Compile Include="jcz\entity\LOCATIONZONESQL.cs" />
+    <Compile Include="jcz\entity\LOCATIONZONESQLRULES.cs" />
+    <Compile Include="jcz\entity\LOTCONTAINERCOUNT.cs" />
+    <Compile Include="jcz\entity\LOTINVENTORY.cs" />
+    <Compile Include="jcz\entity\MACHINEDOCK.cs" />
+    <Compile Include="jcz\entity\MACHINEPRODUCTPLAN.cs" />
+    <Compile Include="jcz\entity\MACHINEPRODUCTPLANHIS.cs" />
+    <Compile Include="jcz\entity\MACHINEPRODUCTPLAN_TEMP.cs" />
+    <Compile Include="jcz\entity\MATERIALBILLHEAD.cs" />
+    <Compile Include="jcz\entity\MODEL.cs" />
+    <Compile Include="jcz\entity\MOVE.cs" />
+    <Compile Include="jcz\entity\NOTEBOOK.cs" />
+    <Compile Include="jcz\entity\NOWEQUIPINDEX.cs" />
+    <Compile Include="jcz\entity\NOWLOCATIONINDEX.cs" />
+    <Compile Include="jcz\entity\NOWZONEINDEX.cs" />
+    <Compile Include="jcz\entity\ORDERDETAIL.cs" />
+    <Compile Include="jcz\entity\ORDERHEAD.cs" />
+    <Compile Include="jcz\entity\PALLETCALCULATELOG.cs" />
+    <Compile Include="jcz\entity\PERMISSION.cs" />
+    <Compile Include="jcz\entity\PREINBOUND.cs" />
+    <Compile Include="jcz\entity\PREOUTBOUND.cs" />
+    <Compile Include="jcz\entity\PRODUCTIONSCHEMEHEAD.cs" />
+    <Compile Include="jcz\entity\PROJECTONEBARCODEFORDELIVERY.cs" />
+    <Compile Include="jcz\entity\QCDETAIL.cs" />
+    <Compile Include="jcz\entity\QCFROMITEM.cs" />
+    <Compile Include="jcz\entity\QCHEAD.cs" />
+    <Compile Include="jcz\entity\RECEIVINGDETAIL.cs" />
+    <Compile Include="jcz\entity\RECEIVINGHEAD.cs" />
+    <Compile Include="jcz\entity\REPORTDATA.cs" />
+    <Compile Include="jcz\entity\ROLE.cs" />
+    <Compile Include="jcz\entity\ROLEPERMISSION.cs" />
+    <Compile Include="jcz\entity\RULES.cs" />
+    <Compile Include="jcz\entity\RUNSJOB.cs" />
+    <Compile Include="jcz\entity\RUNSSETTING.cs" />
+    <Compile Include="jcz\entity\SENDHISTORY.cs" />
+    <Compile Include="jcz\entity\SHIPPER.cs" />
+    <Compile Include="jcz\entity\SHIPPERITEMRELATION.cs" />
+    <Compile Include="jcz\entity\SHORTAGEDETAIL.cs" />
+    <Compile Include="jcz\entity\SHORTAGEHEAD.cs" />
+    <Compile Include="jcz\entity\STATE.cs" />
+    <Compile Include="jcz\entity\STATISTICUNIT.cs" />
+    <Compile Include="jcz\entity\STATISTICUNITRECORD.cs" />
+    <Compile Include="jcz\entity\STATISTICVALUE.cs" />
+    <Compile Include="jcz\entity\STATISTICVALUERECORD.cs" />
+    <Compile Include="jcz\entity\STVTASKINFO.cs" />
+    <Compile Include="jcz\entity\SYSTEMSTRATEGY.cs" />
+    <Compile Include="jcz\entity\TASK.cs" />
+    <Compile Include="jcz\entity\TASKHISTORY.cs" />
+    <Compile Include="jcz\entity\TASKMANCALL.cs" />
+    <Compile Include="jcz\entity\TASKPALLETNUMBER.cs" />
+    <Compile Include="jcz\entity\TRANSBILL.cs" />
+    <Compile Include="jcz\entity\TYPE.cs" />
+    <Compile Include="jcz\entity\UNITGROUP.cs" />
+    <Compile Include="jcz\entity\USEDMATERIALCOUNT.cs" />
+    <Compile Include="jcz\entity\USEDMATERIALSDETAIL.cs" />
+    <Compile Include="jcz\entity\USEDMATERIALSHEAD.cs" />
+    <Compile Include="jcz\entity\USERINFO.cs" />
+    <Compile Include="jcz\entity\USERROLE.cs" />
+    <Compile Include="jcz\entity\USERRUNS.cs" />
+    <Compile Include="jcz\entity\WAREHOUSE.cs" />
+    <Compile Include="jcz\entity\WAVEDETAIL.cs" />
+    <Compile Include="jcz\entity\WAVEFILLPICKINGQTY.cs" />
+    <Compile Include="jcz\entity\WAVEHEAD.cs" />
+    <Compile Include="jcz\entity\WAVETASK.cs" />
+    <Compile Include="jcz\entity\WCS_BATCHINFO.cs" />
+    <Compile Include="jcz\entity\WCS_BDINFO.cs" />
+    <Compile Include="jcz\entity\WCS_CONFIGINFO.cs" />
+    <Compile Include="jcz\entity\WCS_EQUIPMENTINFO.cs" />
+    <Compile Include="jcz\entity\WCS_EQUIPMENTSTATUS.cs" />
+    <Compile Include="jcz\entity\WCS_EVENTLOG.cs" />
+    <Compile Include="jcz\entity\WCS_EVENTLOGHIS.cs" />
+    <Compile Include="jcz\entity\WCS_FPITEMCODE.cs" />
+    <Compile Include="jcz\entity\WCS_ITEMCODE.cs" />
+    <Compile Include="jcz\entity\WCS_ITEMCODE_HISTROY.cs" />
+    <Compile Include="jcz\entity\WCS_JKINTERFACE.cs" />
+    <Compile Include="jcz\entity\WCS_LANEWAYINFO.cs" />
+    <Compile Include="jcz\entity\WCS_OPCGROUP.cs" />
+    <Compile Include="jcz\entity\WCS_OPCITEM.cs" />
+    <Compile Include="jcz\entity\WCS_PRIVILEGE.cs" />
+    <Compile Include="jcz\entity\WCS_RFID.cs" />
+    <Compile Include="jcz\entity\WCS_ROLE.cs" />
+    <Compile Include="jcz\entity\WCS_ROLEPRIVILEGE.cs" />
+    <Compile Include="jcz\entity\WCS_ROUTE.cs" />
+    <Compile Include="jcz\entity\WCS_SETINFO.cs" />
+    <Compile Include="jcz\entity\WCS_STVTASKINFO.cs" />
+    <Compile Include="jcz\entity\WCS_SUBTASKINFO.cs" />
+    <Compile Include="jcz\entity\WCS_SUBTASKINFOHISTORY.cs" />
+    <Compile Include="jcz\entity\WCS_SYSTEMLOG.cs" />
+    <Compile Include="jcz\entity\WCS_TARGETADDRESSINFO.cs" />
+    <Compile Include="jcz\entity\WCS_TASKINFO.cs" />
+    <Compile Include="jcz\entity\WCS_TASKINFO_HISTORY.cs" />
+    <Compile Include="jcz\entity\WCS_USER.cs" />
+    <Compile Include="jcz\entity\WORKFLOWCLASS.cs" />
+    <Compile Include="jcz\entity\WORKFLOWDETAIL.cs" />
+    <Compile Include="jcz\entity\WORKFLOWHEAD.cs" />
+    <Compile Include="jcz\entity\WORKPLACE.cs" />
+    <Compile Include="jcz\entity\WORKTOOLS.cs" />
+    <Compile Include="jcz\entity\WORKWCSLOG.cs" />
+    <Compile Include="jcz\entity\ZONE.cs" />
+    <Compile Include="jcz\entity\Z_LINESEQ.cs" />
+    <Compile Include="jcz\entity\Z_LINESEQ_TMP.cs" />
+    <Compile Include="jcz\model\MaainDate.cs" />
+    <Compile Include="jcz\Tool\ToStringUtil.cs" />
+    <Compile Include="Models\AttributeTable.cs" />
+    <Compile Include="Models\CarType.cs" />
+    <Compile Include="Models\Custom.cs" />
+    <Compile Include="Models\EntityMapper.cs" />
+    <Compile Include="Models\Mapper.cs" />
+    <Compile Include="Models\MyCustomAttributeTable.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderItem.cs" />
+    <Compile Include="Models\TestTree.cs" />
+    <Compile Include="Models\Tree.cs" />
+    <Compile Include="Models\ViewOrder.cs" />
+    <Compile Include="OldTest\Demos\1_Query.cs" />
+    <Compile Include="OldTest\Demos\2_Update.cs" />
+    <Compile Include="OldTest\Demos\3_Insert.cs" />
+    <Compile Include="OldTest\Demos\4_Delete.cs" />
+    <Compile Include="OldTest\Demos\5_CodeFirst.cs" />
+    <Compile Include="OldTest\Demos\5_DbFirst.cs" />
+    <Compile Include="OldTest\Demos\6_ComplexModel.cs" />
+    <Compile Include="OldTest\Demos\7_Filter.cs" />
+    <Compile Include="OldTest\Demos\8_JoinSql.cs" />
+    <Compile Include="OldTest\Demos\DemoBase.cs" />
+    <Compile Include="OldTest\Models\DataTestInfo.cs" />
+    <Compile Include="OldTest\Models\DataTestInfo2.cs" />
+    <Compile Include="OldTest\Models\Enum.cs" />
+    <Compile Include="OldTest\Models\School.cs" />
+    <Compile Include="OldTest\Models\Student.cs" />
+    <Compile Include="OldTest\Models\ViewModelStudent.cs" />
+    <Compile Include="OldTest\PerformanceTesting\PerformanceBase.cs" />
+    <Compile Include="OldTest\PerformanceTesting\SqlSugarPerformance.cs" />
+    <Compile Include="OldTest\Program.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OldTest\UnitTest\DataTest.cs" />
+    <Compile Include="OldTest\UnitTest\Delete.cs" />
+    <Compile Include="OldTest\UnitTest\EnumTest.cs" />
+    <Compile Include="OldTest\UnitTest\ExpressionTest\Field.cs" />
+    <Compile Include="OldTest\UnitTest\ExpressionTest\Method.cs" />
+    <Compile Include="OldTest\UnitTest\ExpressionTest\Select.cs" />
+    <Compile Include="OldTest\UnitTest\ExpressionTest\Where.cs" />
+    <Compile Include="OldTest\UnitTest\Insert.cs" />
+    <Compile Include="OldTest\UnitTest\Mapping .cs" />
+    <Compile Include="OldTest\UnitTest\Query\JoinQuery.cs" />
+    <Compile Include="OldTest\UnitTest\Query\SelectQuery.cs" />
+    <Compile Include="OldTest\UnitTest\Query\SingleQuery.cs" />
+    <Compile Include="OldTest\UnitTest\Setting\Attribute.cs" />
+    <Compile Include="OldTest\UnitTest\Setting\AutoClose.cs" />
+    <Compile Include="OldTest\UnitTest\Setting\MapColumn.cs" />
+    <Compile Include="OldTest\UnitTest\Setting\MapTable.cs" />
+    <Compile Include="OldTest\UnitTest\UnitTestBase.cs" />
+    <Compile Include="OldTest\UnitTest\Update.cs" />
+    <Compile Include="UnitTest\Main.cs" />
+    <Compile Include="UnitTest\UAdo.cs" />
+    <Compile Include="UnitTest\UCodeFirst.cs" />
+    <Compile Include="UnitTest\UJson.cs" />
+    <Compile Include="UnitTest\Updateable.cs" />
+    <Compile Include="UnitTest\UQueryable.cs" />
+    <Compile Include="UnitTest\UQueryableAsync.cs" />
+    <Compile Include="UnitTest\UThread.cs" />
+    <Compile Include="UnitTest\UThread2.cs" />
+    <Compile Include="UnitTest\UThread3.cs" />
+    <Compile Include="UnitTest\UValidate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OldTest\OtherDll\SyntacticSugar.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="OldTest\DataBase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

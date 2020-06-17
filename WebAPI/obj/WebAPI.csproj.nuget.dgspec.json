@@ -1,0 +1,97 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj": {}
+  },
+  "projects": {
+    "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj",
+        "projectName": "OracleTest",
+        "projectPath": "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj"
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
+    "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Jcz\\.nuget\\packages\\",
+        "outputPath": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jcz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj": {
+                "projectPath": "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Oracle.ManagedDataAccess": {
+              "target": "Package",
+              "version": "[19.7.0, )"
+            },
+            "sqlSugar": {
+              "target": "Package",
+              "version": "[5.0.0.15, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

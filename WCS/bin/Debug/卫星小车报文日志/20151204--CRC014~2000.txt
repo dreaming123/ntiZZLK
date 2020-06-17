@@ -1,0 +1,4 @@
+2015/12/4 16:45:52: Break: SendData Fail!
+2015/12/4 16:45:57: Break: SendData Fail!
+2015/12/4 16:46:02: Break: SendData Fail!
+2015/12/4 16:46:07: Break: SendData Fail!

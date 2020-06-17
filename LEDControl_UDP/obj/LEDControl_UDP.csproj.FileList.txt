@@ -1,0 +1,5 @@
+bin\Debug\LEDControl_UDP.dll
+bin\Debug\LEDControl_UDP.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\LEDControl_UDP.dll
+obj\Debug\LEDControl_UDP.pdb

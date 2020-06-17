@@ -1,0 +1,4 @@
+2020/6/13 10:24:23: GetOPCItem()获取OPC项信息出错
+2020/6/13 10:24:23: GetEquipmentInfo()获取设备信息出错
+2020/6/13 10:24:23: GetEquipmentInfo()获取设备信息出错
+2020/6/13 10:24:24: GetTaskInfo获取任务列表失败

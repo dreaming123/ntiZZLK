@@ -1,0 +1,2 @@
+2015/11/9 12:55:45: CRL CRLPLCControl Connection Error!未将对象引用设置到对象的实例。
+2015/11/9 17:54:10: CRL CRLPLCControl Connection Error!未将对象引用设置到对象的实例。

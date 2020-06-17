@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B7A06A0-0D7D-49A3-92F0-1E13BBDA758F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>COMResolution</RootNamespace>
+    <AssemblyName>COMResolution</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="LOG">
+      <HintPath>..\WCS\bin\Debug\LOG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="CRLSRMControlB.cs" />
+    <Compile Include="CRLAgvControl.cs" />
+    <Compile Include="CRLPLCControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CRLSPControl.cs" />
+    <Compile Include="CRLSRMControl.cs" />
+    <Compile Include="CRLBase.cs" />
+    <Compile Include="CRLConveryControl.cs" />
+    <Compile Include="CRLOPCItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CRLStationInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Compute\Compute.csproj">
+      <Project>{CF225437-2040-4F43-B2B1-0600582D28E7}</Project>
+      <Name>Compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COMRW\COMRW.csproj">
+      <Project>{F7E0BA7D-DC3A-491B-AF02-084239C3E1C7}</Project>
+      <Name>COMRW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeSpanCount\TimeSpanCount.csproj">
+      <Project>{ECBCE10E-41D7-4F3B-90CB-9EF8A9A2DC3B}</Project>
+      <Name>TimeSpanCount</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

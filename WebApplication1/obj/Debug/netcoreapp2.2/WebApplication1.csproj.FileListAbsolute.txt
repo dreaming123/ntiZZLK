@@ -1,0 +1,14 @@
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+F:\华美冷库\张晗\ZZLK_WCS1117\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb

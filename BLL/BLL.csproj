@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06FE4E51-D020-45F9-B584-3FC98F3A715C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LOG, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\WCS\bin\Debug\LOG.dll</HintPath>
+    </Reference>
+    <Reference Include="MOControl">
+      <HintPath>.\MOControl.dll</HintPath>
+    </Reference>
+    <Reference Include="RFID">
+      <HintPath>.\RFID.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLLAGV.cs" />
+    <Compile Include="BLLBase.cs" />
+    <Compile Include="BLLConvery.cs" />
+    <Compile Include="BLLLED.cs" />
+    <Compile Include="BLLSRM.cs" />
+    <Compile Include="BLLSRMRun.cs" />
+    <Compile Include="BLLSRMB.cs" />
+    <Compile Include="BLLSRMRunB.cs" />
+    <Compile Include="CRCStatusB.cs" />
+    <Compile Include="CRCObjectB.cs" />
+    <Compile Include="CRCTaskB.cs" />
+    <Compile Include="RFIDStatus.cs" />
+    <Compile Include="CRCObject.cs" />
+    <Compile Include="CRCStatus.cs" />
+    <Compile Include="CRCTask.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComputeClient\ComputeClient.csproj">
+      <Project>{F5741BE4-F996-4E4B-985B-AF823F232F37}</Project>
+      <Name>ComputeClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComputeService\ComputeService.csproj">
+      <Project>{AF518C06-E5E8-48FD-B7F6-2639FC3F8FC6}</Project>
+      <Name>ComputeService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Compute\Compute.csproj">
+      <Project>{CF225437-2040-4F43-B2B1-0600582D28E7}</Project>
+      <Name>Compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COMResolution\COMResolution.csproj">
+      <Project>{0B7A06A0-0D7D-49A3-92F0-1E13BBDA758F}</Project>
+      <Name>COMResolution</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\COMRW\COMRW.csproj">
+      <Project>{F7E0BA7D-DC3A-491B-AF02-084239C3E1C7}</Project>
+      <Name>COMRW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{CCDEB663-0641-4873-80A4-30F6BCA47B0E}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LEDControl_UDP\LEDControl_UDP.csproj">
+      <Project>{0E5AAEFF-74BA-45BD-A70E-1130D87D391A}</Project>
+      <Name>LEDControl_UDP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

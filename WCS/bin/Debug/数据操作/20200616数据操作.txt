@@ -1,0 +1,15 @@
+2020/6/16 8:49:53: GetEquipmentInfo()获取设备信息出错
+2020/6/16 8:49:53: GetEquipmentInfo()获取设备信息出错
+2020/6/16 8:49:54: GetTaskInfo获取任务列表失败
+2020/6/16 8:50:42: GetTaskInfo获取任务列表失败
+2020/6/16 8:50:42: GetTaskInfo获取任务列表失败
+2020/6/16 8:50:43: GetTaskInfo获取任务列表失败
+2020/6/16 8:50:43: GetTaskInfo获取任务列表失败
+2020/6/16 8:51:09: GetEquipmentInfo()获取设备信息出错
+2020/6/16 8:51:10: GetEquipmentInfo()获取设备信息出错
+2020/6/16 8:51:10: GetTaskInfo获取任务列表失败
+2020/6/16 8:52:08: GetTaskInfo获取任务列表失败
+2020/6/16 8:52:10: GetTaskInfo获取任务列表失败
+2020/6/16 9:07:38: GetEquipmentInfo()获取设备信息出错
+2020/6/16 9:07:38: GetEquipmentInfo()获取设备信息出错
+2020/6/16 9:07:38: GetTaskInfo获取任务列表失败

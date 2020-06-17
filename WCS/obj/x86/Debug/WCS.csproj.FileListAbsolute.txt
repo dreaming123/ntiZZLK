@@ -1,0 +1,10 @@
+E:\哈尔滨\WCS\WCS\bin\Debug\WCS.exe
+E:\哈尔滨\WCS\WCS\bin\Debug\WCS.pdb
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\WCS.Properties.Resources.resources
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\WCS.exe
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\WCS.pdb
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\WCS.MainForm.resources
+E:\哈尔滨\WCS\WCS\obj\x86\Debug\WCS.formAbout.resources
