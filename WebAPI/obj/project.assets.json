@@ -12153,11 +12153,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "E:\\space_github\\ntiProject\\正中\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
+      "projectPath": "E:\\space_github\\ntiProject\\正中\\ZZLK_WCS1117\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\Jcz\\.nuget\\packages\\",
-      "outputPath": "E:\\space_github\\ZZLK_WCS1117\\WebAPI\\obj\\",
+      "outputPath": "E:\\space_github\\ntiProject\\正中\\ZZLK_WCS1117\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12176,8 +12176,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj": {
-              "projectPath": "E:\\space_github\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj"
+            "E:\\space_github\\ntiProject\\正中\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj": {
+              "projectPath": "E:\\space_github\\ntiProject\\正中\\ZZLK_WCS1117\\PROJECT\\OracleTest\\OracleTest.csproj"
             }
           }
         }
